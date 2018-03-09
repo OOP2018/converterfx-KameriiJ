@@ -48,20 +48,10 @@ public class ConverterController {
     }
     
     public void handleClear() {
-    		TextField field1 = textfield1;
-    		TextField field2 = textfield2;
-    		
-    		if(textfield1.getText().length() != 0) {
-    			field1 = textfield1;
-    			field2 = textfield2;
-    		}
-    		if(textfield2.getText().length() != 0) {
-    			field1 = textfield2;
-    			field2 = textfield1;
-    		}
     		textfield1.clear();
     		textfield2.clear();
-    		field1.setStyle(defaultStyle);
+    		textfield1.setStyle(defaultStyle);
+    		textfield2.setStyle(defaultStyle);
     }
     
     /**
