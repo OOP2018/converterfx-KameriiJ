@@ -22,20 +22,25 @@ public class ConverterController {
     public void handleConvert(ActionEvent event) {
     	 	TextField field1 = textfield1;
     		TextField field2 = textfield2;
+    		Length unit1 = combobox1.getValue();
+    		Length unit2 = combobox2.getValue();
     		
     		if(textfield1.getText().length() != 0) {
     			field1 = textfield1;
     			field2 = textfield2;
+    			unit1 = combobox1.getValue();
+        		unit2 = combobox2.getValue();
     		}
     		if(textfield2.getText().length() != 0) {
     			field1 = textfield2;
     			field2 = textfield1;
+    			unit1 = combobox2.getValue();
+        		unit2 = combobox1.getValue();
     		}
     		
     		String text = field1.getText().trim();
     		defaultStyle = field1.getStyle();
-    		Length unit1 = combobox1.getValue();
-    		Length unit2 = combobox2.getValue();
+    		
     		try {
     			double number = Double.parseDouble(text);
     			double meter = number*unit1.getValue();
