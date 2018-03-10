@@ -1,5 +1,10 @@
 package converter;
 
+/**
+ * An enumeration (enum) of length units, with values.
+ * 
+ * @author Gunthee Tawewatmongkol
+ */
 public enum Length {
 	
 	Mile (1609.44),

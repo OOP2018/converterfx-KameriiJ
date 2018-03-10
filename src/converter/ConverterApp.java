@@ -6,7 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
 
-
+/**
+ * Main class to launch the program.
+ * 
+ * @author Gunthee Tawewatmongkol
+ */
 public class ConverterApp extends Application {
 	
 	@Override

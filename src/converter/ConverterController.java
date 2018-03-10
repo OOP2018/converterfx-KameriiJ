@@ -5,6 +5,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 
+/**
+ * Initializing data in the UI, and handles events caused by user actions in the UI. 
+ * 
+ * @author Gunthee Tawewatmongkol
+ */
 public class ConverterController {
 	private String defaultStyle;
 	@FXML
@@ -52,6 +57,9 @@ public class ConverterController {
     		}
     }
     
+    /**
+     * Clear the Textfields
+     */
     public void handleClear() {
     		textfield1.clear();
     		textfield2.clear();
